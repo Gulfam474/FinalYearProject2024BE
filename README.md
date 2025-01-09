@@ -19,8 +19,34 @@ brief working- using live video capturing frames performing hand recognition by 
             cv2.imshow()	            Displays an image or video frame.
             cv2.waitKey()            	Waits for a key press to proceed or exit.
             cv2.destroyAllWindows()	  Closes all OpenCV windows.
-)
-
+            )
+pyAutoGui (is python automated GUI library  that make process automate like moving mouse, clicking button, keyboard key press, taking screenshot many more. in my                   project i used some of pyautogui function like moveTo()- this function used to move mouse cursor to x,y coordinate it x,y coordinate as a parameter 
+            click()- this function used for left click of mouse, it click on current position where mouse cursor is present
+            dragTo()- it drag the mouse cursor to specified position
+            scroll() - scroll function used to scroll the screen it take click and x,y as a argument, x,y is position were operation happend
+            hotkey()- it take combination of key board special key like win+s for seraching in window panel,it automatically press the key without using keyboard
+            position()-  it give current loction of the mouse cursor 
+          Category	                  Functions
+          Mouse Control	              moveTo(), click(), dragTo(), scroll()
+          Keyboard Control	          write(), press(), hotkey()
+          Screen Interaction	        screenshot(), locateOnScreen(), position()
+          Alerts & Prompts	          alert(), confirm(), prompt()
+          )
+time module used for delay process so system get time to execute the operation
+operation present in project -
+for calculating difference we used Euclidean distance formula ->distance_index_thumb = ((index_tip.x - thumb_tip.x)**2 + (index_tip.y - thumb_tip.y)**2)**0.5
+difference between thumb_tip and the index finger -
+    if the difference  between thumn_finger tip and index finger is less than 0.05 ,the system automatically perform right click opration on the current position using 
+    pyautogui rightClick() function
+difference between thumb_tip and the middle finger -
+    if the difference  between thumn_finger tip and middle finger is less than 0.05 ,the system automatically perform right click opration on the current position     
+    using pyautogui Click() function
+difference between thumb_tip and the middle finger -
+    if the difference  between thumn_finger tip and middle finger is less than 0.05 ,the system automatically perform right click opration on the current position     
+    using pyautogui Click() function
+difference between thumb_tip and the ring finger -
+    if the difference  between thumn_finger tip and ring finger is less than 0.05 ,the system automatically perform right click opration on the current position     
+    using pyautogui scroll() function
 
 
 '''
